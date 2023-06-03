@@ -1,9 +1,10 @@
 import tkinter as tk
 
 
+
 def imc():
-    peso = float(entry1.get())
-    altura = float(entry2.get())
+    peso = eval(entry1.get())
+    altura = eval(entry2.get())
     resultado = peso / (altura**2)
     imc = 'Valores Inválidos \nPor favor, insira o peso em kG e a altura em metros'
     if resultado > 30:
